@@ -1,0 +1,143 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Bagian "Home" dengan Background Gambar */
+.home {
+    position: relative; /* Mengatur posisi agar overlay bisa ditempatkan di atasnya */
+    text-align: center;
+    padding: 3em 1em;
+    background: url('olympiastages.jpeg') no-repeat center center/cover; /* Mengatur background dengan gambar */
+    color: #fff;
+}
+
+/* Overlay untuk Efek Semi-Transparan */
+.overlay {
+    position: absolute; /* Menempatkan overlay di atas background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi 50% */
+    z-index: 1; /* Memastikan overlay berada di depan background */
+}
+
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2;
+}
+
+.intro-text h2 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-top: 0.5em;
+}
+
+/* About Section */
+.about {
+    padding: 2em 1em;
+    text-align: center;
+    color: #000;
+}
+
+.about h2 {
+    color: #000;
+    margin-bottom: 1em;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    color: #000;
+}
+
+/* Contact Section with Icons */
+.contact {
+    padding: 2em 1em;
+    text-align: center;
+    color: #000;
+}
+
+.contact h2 {
+    color: #000;
+    margin-bottom: 1em;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0.5em 0;
+}
+
+.social-links li a {
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.social-links li a i {
+    margin-right: 0.5em;
+    color: #333;
+}
+
+.social-links li a:hover {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
